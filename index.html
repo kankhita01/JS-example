@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="js">
+        <div class="container">
+            <!--Example 1-->
+            <h2 class="text-warning">Click the button to change the text</h2>
+            <button onclick="textChange()" type="button" class="btn btn-primary">Click to change the text</button>
+            <h3 id="t_c">Hello</h3>
+
+            <!-- Example 2 --> <hr>
+            <h2 class="text-warning">Click the button to show the date</h2>
+            <button onclick="showDate()" class="btn btn-dark" type="button">Show the Date</button>
+            <h3 id="t_d">Date and Time</h3>
+
+            <!-- Example 3 --> <hr>
+            <h2 class="text-warning">Click the button to on/off the bulb</h2>
+            <button onclick="angryEmoji()" class="btn btn-danger" type="button">Angry</button>
+            <img id="emoji_img" src="images/sad.png" alt="">
+            <button onclick="smileEmoji()" class="btn btn-dark" type="button">Smile</button>
+
+            <!-- Example 4 --> <hr>
+            <h2 class="text-warning">Click the button to change the color</h2>
+            <button onclick="colorChange()" class="btn btn-primary" type="button">Text Color</button>
+            <h3 id="t_color">JavaScript</h3>
+
+            <!-- Example 5 --> <hr>
+            <h2 class="text-warning">Click the button to show/hide the text</h2>
+            <button onclick="tShow()" class="btn btn-dark" type="button">Show Text</button>
+            <button onclick="tHide()" class="btn btn-danger" type="button">Hide Text</button>
+            <h3 id="sh_text">HTML, CSS, JavaScript</h3>
+
+            <!-- Example 6 --> <hr>
+            <h2 class="text-warning">Click the button to show the text</h2>
+            <button onclick="dWrite()" class="btn btn-primary" type="button">Document.write</button>
+
+            <!-- Example 7 --> <hr>
+            <h2 class="text-warning">Click the button to show Alert</h2>
+            <button onclick="sAlert()" class="btn btn-dark" type="button">Alert</button>
+
+            <!-- Example 8 --> <hr>
+            <h2 class="text-warning">Click the button to show the data on console</h2>
+            <button onclick="cLog()" class="btn btn-danger" type="button">console.log</button>
+
+            <!-- Example 9 --> <hr>
+            <h2 class="text-warning">Click the button to show Addition</h2>
+            <button onclick="rAddition()" class="btn btn-dark" type="button">Addition</button>
+            <h3 id="r_a">The result is</h3>
+
+            <!-- Example 10 --> <hr>
+            <h2 class="text-warning">Click the button to show the text using variable</h2>
+            <button onclick="vMessage()" class="btn btn-primary" type="button">Show Message</button>
+            <h3 id="vm"></h3>
+
+            <!-- Example 11 --> <hr>
+            <h2 class="text-warning">Click the button to show Subtraction</h2>
+            <button onclick="rSubtraction()" class="btn btn-dark" type="button">Subtraction</button>
+            <h3 id="r_s">The result is</h3>
+
+            <!-- Example 12 --> <hr>
+            <h2 class="text-warning">Click the button to show the URL</h2>
+            <button onclick="myUrl()" class="btn btn-danger" type="button">Show URL</button>
+            <p id="demo">URL</p>
+
+            <!-- Example 13 --> <hr>
+            <h2 class="text-warning">Click the button to show numbers of ancors</h2>
+            <button onclick="numAncor()" class="btn btn-primary" type="button">Show numbers of ancor</button><br>
+            <a name="html">HTML</a>
+            <a name="css">CSS</a>
+            <a name="js">JAVA SCRIPT</a><br>
+            <p id="ancor">number is</p>
+
+            <!-- Example 14 --> <hr>
+            <h2 class="text-warning">Click the button to show attribute of first link</h2>
+            <button onclick="sLink()" class="btn btn-dark" type="button">Show</button><br>
+            <p>
+                <a href="https://www.w3schools.com/html/html_scripts.asp">HTML</a>
+                <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+            </p>
+            <p id="s_l">href of firt link</p>
+
+            <!-- Example 15 --> <hr>
+            <h2 class="text-warning">Click the Disable button to disable the "OK" button</h2>
+            <button id="btn01" class="btn btn-danger" type="button">OK</button>
+            <button onclick="disableElement()" class="btn btn-dark" type="button">Disable</button>
+
+            <!-- Example 16 --> <hr>
+            <h2 class="text-warning">Click the button to show the text</h2>
+            <p class="p">Welcome to JavaScript</p>
+            <p class="p">Welcome to JavaScript</p>
+            <p class="p">Welcome to JavaScript</p>
+            <p class="p">Welcome to JavaScript</p>
+            <p class="p">Welcome to JavaScript</p>
+            <button onclick="classExample()" class="btn btn-primary" type="button">Show text</button>
+
+            <!-- Example 17 --> <hr>
+            <h2 class="text-warning">Click the button to count the element</h2>
+            <p class="p_c">HTML CSS JavaScript</p>
+            <p class="p_c">HTML CSS JavaScript</p>
+            <p class="p_c">HTML CSS JavaScript</p>
+            <p class="p_c">HTML CSS JavaScript</p>
+            <p class="p_c">HTML CSS JavaScript</p>
+            <button onclick="elementCount()" class="btn btn-danger" type="button">count element</button>
+
+            <!-- Example 18 --> <hr>
+            <h2 class="text-warning">Click the button to add number and string</h2>
+            <button onclick="addSn()" class="btn btn-dark" type="button">Add string and Number</button>
+            <p id="add">Result</p>
+
+            <!-- Example 19 --> <hr>
+            <h2 class="text-warning">Click the button to show the *= Operators result</h2>
+            <button onclick="assignMulti()" type="button" class="btn btn-danger">Result</button>
+            <h3 id="asMul_result"> The result is</h3>
+
+            <!-- Example 20 --> <hr>
+            <h2 class="text-warning">Click the button to show the /= Operators result</h2>
+            <button onclick="assigndiv()" type="button" class="btn btn-primary">Result</button>
+            <h3 id="asdiv_result"> The result is</h3>
+
+            <!-- Example 21 --> <hr>
+            <h2 class="text-warning">Click the button to show the += Operators result</h2>
+            <button onclick="assignadd()" type="button" class="btn btn-dark">Result</button>
+            <h3 id="asadd_result"> The result is</h3>
+
+            <!-- Example 22 --> <hr>
+            <h2 class="text-warning">Click the button to show the -= Operators result</h2>
+            <button onclick="assignsum()" type="button" class="btn btn-danger">Result</button>
+            <h3 id="sum_result"> The result is</h3>
+
+            <!-- Example 23 --> <hr>
+            <h2 class="text-warning">Click the button to show comparison operator</h2>
+            <button onclick="comparisonA()" type="button" class="btn btn-primary">Result</button>
+            <p id="compare">A greater B or not</p>
+
+            <!-- Example 24 --> <hr>
+            <h2 class="text-warning">Click the button to show text length</h2>
+            <button onclick="textLength()" type="button" class="btn btn-dark">Text length</button>
+            <p id="length">The length is</p>
+
+            <!-- Example 25 --> <hr>
+            <h2 class="text-warning">Click the button to show double quote in text</h2>
+            <button onclick="doubleQuote()" type="button" class="btn btn-primary">Show Text</button>
+            <p id="d_q"></p>
+
+            <!-- Example 26 --> <hr>
+            <h2 class="text-warning">Click the button to show arrays</h2>
+            <button onclick="showArray()" type="button" class="btn btn-danger">Show arrays</button>
+            <p id="s_array"></p>
+
+            <!-- Example 27 --> <hr>
+            <h2 class="text-warning">Click the button to show month</h2>
+            <button onclick="showMonth()" type="button" class="btn btn-dark">Show Month</button>
+            <p id="s_month">The month is</p>
+
+            <!-- Example 28 --> <hr>
+            <h2 class="text-warning">Click the button to show hour</h2>
+            <button onclick="showHours()" type="button" class="btn btn-primary">Show Hours</button>
+            <p id="s_hour">The hour is</p>
+
+            <!-- Example 29 --> <hr>
+            <h2 class="text-warning">Click the button to show minitue</h2>
+            <button onclick="showMinitue()" type="button" class="btn btn-danger">Show Minitue</button>
+            <p id="s_minitue">The minitue is</p>
+
+            <!-- Example 30 --> <hr>
+            <h2 class="text-warning">Click the button to show minitue</h2>
+            <button onclick="showSecond()" type="button" class="btn btn-dark">Show Second</button>
+            <p id="s_sec">The second is</p>
+
+            <!-- Example 31 --> <hr>
+            <h2 class="text-warning">Click the button to show the square root</h2>
+            <button onclick="showRoot()" type="button" class="btn btn-primary">Show Square Root</button>
+            <p id="s_root">Square root of 64 is</p>
+
+            <!-- Example 32 --> <hr>
+            <h2 class="text-warning">Click the button to show the minimum number</h2>
+            <button onclick="showMin()" type="button" class="btn btn-danger">Show Minimum Number</button>
+            <p id="s_min">Minimum number is</p>
+
+            <!-- Example 33 --> <hr>
+            <h2 class="text-warning">Click the button to show the maximum number</h2>
+            <button onclick="showMax()" type="button" class="btn btn-primary">Show Maximum Number</button>
+            <p id="s_max">Maximum number is</p>
+
+            <!-- Example 34 --> <hr>
+            <h2 class="text-warning">Click the button to show the value of boolean</h2>
+            <button onclick="showBool()" type="button" class="btn btn-dark">Show value of Boolean</button>
+            <p id="s_bool"></p>
+
+            <!-- Example 35 --> <hr>
+            <h2 class="text-warning">Click the button to show the == Operator</h2>
+            <button onclick="showLogical()" type="button" class="btn btn-primary">Show the result</button>
+            <p id="s_logical"></p>
+            
+            <!-- Example 36 --> <hr>
+            <h2 class="text-warning">Click the button to change the font size</h2>
+            <button onclick="changeFontsize()" type="button" class="btn btn-danger">Show the result</button>
+            <p id="c_font">WEB DEVELOPMENT</p>
+
+            <!-- Example 37 --> <hr>
+            <h2 class="text-warning">Click the button to change the font style</h2>
+            <button onclick="changeFontstyle()" type="button" class="btn btn-dark">Show the result</button>
+            <h5 id="c_style">Welcome to Full stack web development</h5>
+
+            <!-- Example 38 --> <hr>
+            <h2 class="text-warning">Click the button to change the background color</h2>
+            <button onclick="changeBg()" type="button" class="btn btn-danger">Show the result</button>
+            <p id="c_bg">Welcome students</p>
+
+            <!-- Example 39 --> <hr>
+            <h2 class="text-warning">Click the button to sort an array in ascending order</h2>
+            <button onclick="sortAscending()" type="button" class="btn btn-primary">Show the result</button>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+
+            <!-- Example 40 --> <hr>
+            <h2 class="text-warning">Click the button to sort an array in descending order</h2>
+            <button onclick="sortDescending()" type="button" class="btn btn-dark">Show the result</button>
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+
+            <!-- Example 41 --> <hr>
+            <h2 class="text-warning">Click the button to convert number to string</h2>
+            <button onclick="convertString()" type="button" class="btn btn-danger">Show the result</button>
+            <p id="c_string"></p>
+
+            <!-- Example 42 --> <hr>
+            <h2 class="text-warning">Click the button to show the return random number</h2>
+            <button onclick="randomNum()" type="button" class="btn btn-primary">Show the result</button>
+            <p id="r_n"></p>
+
+            <!-- Example 43 --> <hr>
+            <h2 class="text-warning">Click the button to submit the form</h2>
+            <form id="frm1" action="/action_page.php">
+                Name: <input type="text" name="fname"><br><br>
+                <input type="button" class="btn btn-danger" onclick="myFunction()" value="Submit">
+              </form>
+            <!-- Example 44 --> <hr>
+            <h2 class="text-warning">Click the button to push elements in array</h2>
+            <button onclick="arrayPush()" type="button" class="btn btn-dark">Show the result</button>
+            <p id="a_p"></p>
+
+            <!-- Example 45 --> <hr>
+            <h2 class="text-warning">Click the button to change elements in array</h2>
+            <button onclick="changeArray()" type="button" class="btn btn-primary">Show the result</button>
+            <p id="before_change">before changing array</p>
+            <p id="c_array">after changing array</p>
+
+            <!-- Example 46 --> <hr>
+            <h2 class="text-warning">Click the button to show the ratio of pie</h2>
+            <button onclick="ratioPie()" type="button" class="btn btn-dark">Show the result</button>
+            <p id="r_pie"></p>
+
+            <!-- Example 47 --> <hr>
+            <h2 class="text-warning">Click the button to show map from an array</h2>
+            <button onclick="createMap()" type="button" class="btn btn-danger">Show the result</button>
+            <p id="c_map"></p>
+
+            <!-- Example 48 --> <hr>
+            <h2 class="text-warning">Click the button to search an array for the item</h2>
+            <button onclick="searchMap()" type="button" class="btn btn-primary">Show the result</button>
+            <p id="search_map"></p>
+
+            <!-- Example 49 --> <hr>
+            <h2 class="text-warning">Click the button to display object</h2>
+            <button onclick="displayObject()" type="button" class="btn btn-dark">Show the result</button>
+            <p id="d_obj"></p>
+
+            <!-- Example 50 --> <hr>
+            <h2 class="text-warning">Click the button to show the type of the variable</h2>
+            <button onclick="showType()" type="button" class="btn btn-danger">Show type</button>
+            <p id="s_type">type is</p>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+
+
+
+    <!--script links-->
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

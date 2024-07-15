@@ -1,0 +1,33 @@
+function
+         function function_name(){
+            
+         }
+statement
+##opertaor
+    arithmatic operator
+    +
+    -
+    *
+    /
+    assignment operator
+    =
+    ==
+    ==
+
+    concetion
+    .
+
+##output
+    innerHTML
+    console.log
+    document.write
+    window.alert
+
+## data type
+    string ""
+
+## event
+    
+
+statement is a meaningful line of code
+      
